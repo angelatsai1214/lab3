@@ -10,11 +10,11 @@ public class ListTests {
     @Test
     public void testFilter() {
         List<String> li = new ArrayList<>();
-        li.add("apple");
+        li.add("pple");
 
         List<String> liAfterFilter = ListExamples.filter(li, new checkContainsLetterA());
 
-        assertArrayEquals(new String[] { "apple" }, liAfterFilter.toArray());
+        assertArrayEquals(new String[] {}, liAfterFilter.toArray());
     }
 
     @Test
