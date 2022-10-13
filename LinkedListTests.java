@@ -12,6 +12,16 @@ public class LinkedListTests {
     }
 
     @Test
+    public void testPrepend() {
+        LinkedList list = new LinkedList();
+        list.prepend(1);
+        list.prepend(2);
+        list.prepend(3);
+
+        assertEquals("3 2 1 ", list.toString());
+    }
+
+    @Test
     public void testAppend() {
         LinkedList list = new LinkedList();
         list.append(1);
