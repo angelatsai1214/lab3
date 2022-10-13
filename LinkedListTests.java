@@ -40,4 +40,24 @@ public class LinkedListTests {
         assertEquals(2, list.first());
     }
 
+    @Test
+    public void testLast() {
+        LinkedList list = new LinkedList();
+        list.append(1);
+        list.append(2);
+        list.append(3);
+
+        assertEquals(3, list.last());
+    }
+
+    @Test
+    public void testLength() {
+        LinkedList list = new LinkedList();
+        list.append(1);
+        list.append(2);
+        list.append(3);
+
+        assertEquals(3, list.length());
+    }
+
 }
