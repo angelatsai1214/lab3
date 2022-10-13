@@ -31,4 +31,13 @@ public class LinkedListTests {
         assertEquals("1 2 3 ", list.toString());
     }
 
+    @Test
+    public void testFirst() {
+        LinkedList list = new LinkedList();
+        list.append(1);
+        list.prepend(2);
+
+        assertEquals(2, list.first());
+    }
+
 }
